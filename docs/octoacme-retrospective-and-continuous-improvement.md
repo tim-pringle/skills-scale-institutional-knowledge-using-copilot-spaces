@@ -20,6 +20,8 @@ After each sprint, release, or important milestone. Also after incidents.
 ## Tracking Improvements
 - Add action items to the project backlog or issues with clear owners and timelines
 - Review outstanding actions in the weekly PM sync
+- Update the [RAID Log](octoacme-raid-log.md) to close resolved issues and risks
+- Record any process decisions in the [Decision Log](octoacme-decision-log.md)
 
 ## Example Action Item Template
 - Title:
@@ -31,3 +33,8 @@ After each sprint, release, or important milestone. Also after incidents.
 ## Continuous Improvement Culture
 - Measure impact of action items
 - Celebrate improvements and make small, iterative changes
+- Update the [Definition of Done](octoacme-definition-of-done.md) if quality gaps were identified during the retro
+
+---
+
+**Previous phase:** [← Release & Deployment](octoacme-release-and-deployment.md) | **Start again:** [Project Initiation →](octoacme-project-initiation.md)

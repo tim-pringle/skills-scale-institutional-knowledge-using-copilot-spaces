@@ -4,9 +4,13 @@
 Guidance for managing day-to-day execution and tracking progress toward project milestones.
 
 ## Team Rhythm
-- Daily standups (15 min) — focus on progress, blockers, dependencies
-- Weekly delivery sync — show progress, updates, and flagged risks
-- Demo/Review at the end of each sprint or milestone
+
+| Meeting | Frequency | Duration | Inputs | Outputs |
+|---|---|---|---|---|
+| **Standup** | Daily | 15 min | Yesterday's work, blockers, dependencies | Updated board, flagged blockers, escalations to PM |
+| **Weekly Delivery Sync** | Weekly | 30–45 min | [RAID Log](octoacme-raid-log.md), project board, [Weekly Status](octoacme-weekly-status-template.md) draft | Published status update, updated RAID log, decisions recorded |
+| **Sprint / Demo Review** | End of sprint | 30–60 min | Completed work, acceptance criteria, DoD checklist | Stakeholder feedback, accepted/rejected items, backlog updates |
+| **Retrospective** | End of sprint/release | 45–75 min | Previous action items, team sentiment | ≤3 owned action items added to backlog |
 
 ## Workflows
 - Use the project board (e.g., GitHub Projects) with columns: Backlog, Ready, In Progress, In Review, QA, Done
@@ -24,9 +28,19 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 - Manual QA for feature acceptance when needed
 
 ## Reporting & Metrics
-- Track velocity and burndown
-- Monitor success metrics identified in the Project One-pager
-- Use dashboards for key signals (errors, latency, usage)
+
+Use the [Weekly Status Template](octoacme-weekly-status-template.md) for stakeholder updates. Track the following metrics on the project board and dashboards:
+
+| Metric | Definition | Where reviewed |
+|---|---|---|
+| **Velocity** | Number of backlog items (or story points) completed per sprint | Sprint review / weekly sync |
+| **Burndown** | Remaining work vs. time left in the sprint or milestone | Daily standup / project board |
+| **Cycle Time** | Time from an item moving to *In Progress* to *Done* | Weekly sync; trend over 4–6 weeks |
+| **Lead Time** | Time from an item being created (backlog) to *Done* | Monthly / milestone review |
+| **WIP (Work In Progress)** | Number of items currently *In Progress* (limit to reduce context-switching) | Daily standup; board column limits |
+| **Open Bug Count (High/Critical)** | Number of unresolved high- or critical-severity bugs | Daily; must be 0 before release |
+
+Monitor success metrics defined in the Project One-pager (errors, latency, usage) via dashboards.
 
 ## Blocker Escalation
 - Level 1: Team-level triage in daily standup
@@ -37,4 +51,8 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 - [ ] Branching and PR conventions documented in repo
 - [ ] CI configured for tests and lint
 - [ ] Regular demos scheduled
-- [ ] Risk register updated weekly
+- [ ] [RAID Log](octoacme-raid-log.md) updated weekly
+- [ ] [Weekly Status Template](octoacme-weekly-status-template.md) distributed each week
+- [ ] [Definition of Done](octoacme-definition-of-done.md) visible and used during board reviews
+
+**Next phase:** [Release & Deployment →](octoacme-release-and-deployment.md)
